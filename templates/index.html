@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mackenzie</title>
+  <link href="{{ url_for('static', filename='styles/normalize.css') }}" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static', filename='styles/main.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='styles/responsive.css') }}" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='fav/apple-touch-icon.png') }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='fav/favicon-32x32.png') }}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='fav/favicon-16x16.png') }}" />
+  <link rel="manifest" href="{{ url_for('static', filename='fav/site.webmanifest') }}" />
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="{{ url_for('index') }}" id="logo">
+      <img class="defualtImage" src="{{ url_for('static', filename='img/logo.png') }}"
+        style="border-radius:50%;border:3px solid #729482;margin-top:15px;">
+    </a>
+    <nav>
+      <li><a href="{{ url_for('index') }}" class="selected">HOME</a></li>
+      <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+      <li><a href="{{ url_for('members') }}">MEMBERS</a></li>
+    </nav>
+  </header>
+
+  <!-- Things to do:
+  Search bar
+-->
+
+  <div class="row">
+    <div id="faqA">
+      <div id="speechtextA">
+        <p style="padding-left: -50px;">Input question from the search bar, templete only delete later</p>
+      </div>
+    </div>
+    <img id="defaultImage" src="{{ url_for('static', filename='img/default1.png') }}" alt="filler">
+  </div>
+
+  <div class="row">
+    <img src="{{ url_for('static', filename='img/logo3.png') }}" alt="filler"
+      style="border-radius:50%;border:3px solid #729482;">
+    <div id="faqQ">
+      <div id="speechtextQ">
+        <p style="padding-left:-30px;">Chatbot Answer</p>
+      </div>
+    </div>
+  </div>
+  <div class="row1">
+    <form role="search" id="form">
+      <input type="search" id="query" name="q" placeholder="Enter question">
+      <button>
+        Ask Mackenzie
+      </button>
+    </form>
+  </div>
+
+  <footer>
+    <a href="mailto:contact.us@mackenzie.help?subject=Hey!%20I%20need%20some%20help." target="_blank"
+      rel="noopener noreferrer">
+      <p>Want to email us?</p>
+    </a>
+  </footer>
+
+</body>
+
+</html>

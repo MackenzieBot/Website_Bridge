@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mackenzie</title>
+    <link href="{{ url_for('static', filename='styles/normalize.css') }}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='styles/members.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='styles/responsive.css') }}" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='fav/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='fav/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='fav/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', filename='fav/site.webmanifest') }}" />
+</head>
+
+<body id="body">
+    <header>
+        <a href="{{ url_for('index') }}" id="logo">
+            <img class="defualtImage" src="{{ url_for('static', filename='img/logo3.png') }}"
+                style="border-radius:50%;border:3px solid #729482;margin-top:15px;">
+        </a>
+        <nav>
+            <li><a href="{{ url_for('index') }}">HOME</a></li>
+            <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+            <li><a href="{{ url_for('members') }}" class="selected">MEMBERS</a></li>
+        </nav>
+    </header>
+    <h2>Leaders</h2>
+    <div class="teamNames">
+        <div> <a class="name" href="https://www.linkedin.com/in/amro-d-047b771a7"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Amro Dadah</a></strong><br></a></a><br><a class="name"
+                href="mailto:amro.d@mackenzie.help">Project Manager</a><br></div>
+        <div> <a class="name" href="https://www.linkedin.com/in/aref-zeitoun/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Aref Zeitoun</strong><br></a><br><a class="name"
+                href="mailto:aref.z@mackenzie.help">Project Manager</a><br></div>
+        <div> <a class="name" href="https://www.linkedin.com/in/karam-jazmati-6a443b173/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/KaramJazmati.jpg') }}"><br><br><strong>Karam Jazmati</strong><br></a><br><a class="name"
+                href="mailto:karam.j@mackenzie.help">Leader</a><br></div>
+        <div> <a class="name" href="https://www.linkedin.com/in/edward-s-7882289a/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/EdwardSana.png') }}"><br><br><strong>Edward Sana</strong><br></a><br><a class="name"
+                href="mailto:edward.s@mackenzie.help">Leader Assistant</a><br></div>
+        <div> <a class="name" href="https://engineering.wayne.edu/profile/hg1702"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Professor Doug</strong></a><br><br><a class="name"
+                href="mailto:doug.w@mackenzie.help">Advisor</a></div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <h2>Members</h2>
+    <h3>AI Team</h3><br>
+    <div class="teamNames">
+        <div> <a class="name" href="http://www.linkedin.com/in/aref-zeitoun"> <img class="profileImage"
+                    src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Aref Zeitoun</strong><br></a><br><a class="name"
+                href="mailto:aref.z@mackenzie.help">Team Leader</a><br></div>
+        <div> <a class="name" href="https://www.linkedin.com/in/gabriel-sotelo/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/GabrielCarlosSoteloJusto.jpg') }}"><br><br><strong>Gabriel Sotelo</strong><br></a><br><a
+                class="name" href="mailto:gabriel.s@mackenzie.help">Technical Lead</a><br></div>
+        <div> <img class="profileImage" src="{{ url_for('static', filename='img/AnhPhuongTrinh.png') }}"><br><br><strong>Anh Trinh</strong><br></a><br><a
+                class="name" href="mailto:anh.t@mackenzie.help">Member</a><br></div>
+        <div> <img class="profileImage" src="{{ url_for('static', filename='img/BryleePavlik.jpeg') }}"><br><br><strong>Brylee Pavlik</strong><br></a><br><a
+                class="name" href="mailto:brylee.p@mackenzie.help">Member</a><br></div>
+        <div> <img class="profileImage" src="{{ url_for('static', filename='img/HanNguyen.jpeg') }}"><br><br><strong>Han Nguyen</strong><br></a><br><a
+                class="name" href="mailto:han.n@mackenzie.help">Member<br></div>
+        <div> <a class="name" href="http://www.linkedin.com/in/jack-sleeman0"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/JackAlanSleeman.jpg') }}"><br><br><strong>Jack Sleeman</strong><br></a><br><a class="name"
+                href="mailto:jack.s@mackenzie.help">Member<br></div>
+        <div> <img class="profileImage" src="{{ url_for('static', filename='img/JacobGraybeal_msu_photo - Jacob A Graybeal.JPG') }}"><br><br><strong>Jacob
+                Graybeal</strong><br></a><br><a class="name" href="mailto:jacob.g@mackenzie.help">Member<br></div>
+        <div> <a class="name" href=""><img class="profileImage" src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Jay
+                    Ho</strong><br></a><br><a class="name" href="mailto:jay.h@mackenzie.help">Member</div>
+        <div> <img class="profileImage" src="{{ url_for('static', filename='img/KrithiSachithanand.jpeg') }}"><br><br><strong>Krithi
+                Schithanand</strong><br></a><br><a class="name" href="mailto:krithi.s@mackenzie.help">Member<br></div>
+        <div> <a class="name" href="http://linkedin.com/in/mohammad-zaman-7528b517a"> <img class="profileImage"
+                    src="{{ url_for('static', filename='img/MohammadMohtasimZaman.jpeg') }}"><br><br><strong>Mohammad Zaman</strong><br></a><br><a
+                class="name" href="mailto:mohammad.z@mackenzie.help">Member<br></div>
+        <div> <a class="name" href="https://www.linkedin.com/in/neil-khedekar-66b937199/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/NeilKhedekar.jpeg') }}"><br><br><strong>Neil Khedekar</strong><br></a><br><a class="name"
+                href="mailto:neil.k@mackenzie.help">Member<br></div>
+        <div> <a class="name" href="https://www.linkedin.com/in/ravi-grewal-9ab26a208/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/RaviGrewal.jpg') }}"><br><br><strong>Ravi Grewal</strong><br></a><br><a class="name"
+                href="mailto:ravi.g@mackenzie.help">Member</a><br></div>
+        <div> <img class="profileImage" src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Stanley Duru</strong><br></a><br><a
+                class="name" href="mailto:stanley.d@mackenzie.help">Member</a><br></div>
+        <div> <a class="name" href="https://www.linkedin.com/in/treasure-ogundiran-852243197"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/TreasureOgundiran.jpeg') }}"><br><br><strong>Treasure Ogundrian</strong><br></a><br><a
+                class="name" href="mailto:treasure.o@mackenzie.help">Member</a><br></div>
+        <div> <a class="name" href="https://www.linkedin.com/in/trinity-johnson-a099aa179/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/TrinityJohnson.jpg') }}"><br><br><strong>Trinity Johnson</strong><br></a><br><a class="name"
+                href="mailto:trinity.j@mackenzie.help">Member</a><br></div>
+        <div></div>
+        <!--so that it appears on left side-->
+        <div></div>
+    </div>
+    <!--Placeholder for styling purposes-->
+    <br><br>
+    <!---->
+    <h3>Team Security/Website</h3><br>
+    <div class="teamNames">
+
+        <div><a class="name" href="http://www.linkedin.com/in/amro-d-047b771a7"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Amro Dadah</strong><br></a><a class="name"
+                href="mailto:amro.d@mackenzie.help"><br>Team Leader</a></div>
+        <div><a class="name" href="https://www.linkedin.com/in/chuck-bardel"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Chuck Bardel</strong><br></a><a class="name"
+                href="mailto:chuck.b@mackenzie.help"><br>Member<br></a></div>
+        <div><img class="profileImage" src="{{ url_for('static', filename='img/MyroslawaChrin.jpg') }}"><br><br><strong>Myroslawa Chrin</strong><br><a
+                class="name" href="mailto:myroslawa.c@mackenzie.help"><br>Member<br></a></div>
+        <div><a class="name" href="http://linkedin.com/in/nahiyan-chowdhury-00963b1a8"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/Nahiyan.jpg') }}"><br><br><strong>Nahiyan Chowdhury</strong><br></a><a class="name"
+                href="mailto:nahiyan.c@mackenzie.help"><br>Member<br></a></div>
+
+    </div>
+
+    <br><br><br><br>
+    <h3>Front-End Web Development</h3><br>
+    <div class="teamNames">
+
+        <div><img class="profileImage" src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Ankith Goutham</strong><br><a class="name"
+                href="mailto:ankith.g@mackenzie.help"><br>Member<br></a></div>
+        <div><a class="name" href="http://www.linkedin.com/in/qoshi"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Arian Qoshi</strong><br></a><a class="name"
+                href="mailto:arian.q@mackenzie.help"><br>Member<br></div>
+        <div><a class="name" href="https://www.linkedin.com/in/kylie-lee-8477091b5/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/KylieLee.jpg') }}"><br><br><strong>Kylie Lee</strong><br></a><a class="name"
+                href="mailto:kylie.l@mackenzie.help"><br>Member<br></div>
+        <div><a class="name" href="https://www.linkedin.com/in/murtaza-ali-a447b0207/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/default.png') }}"><br><br><strong>Murtaza Ali</strong> <br><a class="name"
+                    href="mailto:murtaza.a@mackenzie.help"><br>Member<br></a></div>
+        <div><img class="profileImage" src="{{ url_for('static', filename='img/SHUHELAHMED.jpg') }}"><br><br><strong>Shuhel Ahmed</strong><br><a
+                class="name" href="mailto:Shuhel.A@mackenzie.help"><br>Assistant<br></a></div>
+
+    </div>
+    <br>
+
+    <h3><br>Back-End Web Development</h3><br>
+    <div class="teamNames">
+        <div><a class="name" href="https://www.linkedin.com/in/james-daniel-b754a8195/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/JamesDaniel.jpg') }}"><br><br><strong>James Daniel</strong><br></a><a class="name"
+                href="mailto:james.d@mackenzie.help"><br>Team Leader<br></div>
+        <div><a class="name" href="https://www.linkedin.com/in/edward-s-7882289a/"><img class="profileImage"
+                    src="{{ url_for('static', filename='img/EdwardSana.png') }}"><br><br><strong>Edward Sana</strong><br></a><a class="name"
+                href="mailto:edward.s@mackenzie.help"><br>Leader Assistant<br></div>
+
+    </div>
+
+    <footer>
+        <a id="text" href="mailto:contact.us@mackenzie.help?subject=Hey!%20I%20need%20some%20help." target="_blank"
+            rel="noopener noreferrer">
+            <p>Want to email us?</p>
+        </a>
+    </footer>
+
+</body>
+<!--You're Awesome!-->
+<!--Thank You :D-->
+
+</html>

@@ -1,0 +1,249 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mackenzie</title>
+    <link href="{{ url_for('static', filename='styles/normalize.css') }}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='styles/about.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='styles/responsive.css') }}" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='fav/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='fav/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='fav/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', filename='fav/site.webmanifest') }}" />
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="about">
+    <header class="header1">
+        <a href="{{ url_for('index') }}" id="logo">
+          <img src="{{ url_for('static', filename='img/logo3.png') }}" style="width:55px;border-radius:50%;margin-top:15px;">
+        </a>
+        <nav>
+            <li><a href="{{ url_for('index') }}">HOME</a></li>
+            <li><a href="{{ url_for('about') }}" class="selected">ABOUT</a></li>
+            <li><a href="{{ url_for('members') }}">MEMBERS</a></li>
+        </nav>
+    </header>
+
+    <div class="row">
+        <img src="{{ url_for('static', filename='img/stock_chatbot.png') }}" alt="chat bot"
+            style="box-shadow: 10px 10px 5px grey;float:left;width:20%;border-radius:10px;">
+
+
+        <div id="textRight">
+            <h2 style="text-align:center;">About Us</h2>
+            <p>We are a dedicated group of students from the Michigan State University AI Club and Wayne State Cyber
+                Defense Club who are trying to solve real world problems by combining the power of Artificial
+                Intelligence and Cyber Security into projects like Mackenzie. We made this project to help people who
+                are having technical issues in categories such as Hardware, Software, Network, Security, etc. We
+                designed this chatbot to be able to give users the correct answers to common I.T. questions. Our answers
+                are from freely-available reputable online sources, and we always share the source with each response.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="textLeft">
+            <br>
+            <h2 style="text-align:center;">Our Goals</h2>
+            <p>We understand that technical issues can be very annoying and disrupt productivity so our goal with
+                Mackenzie is to provide instant and accurate answers to user questions and lessen the amount of time
+                spent browsing the web for answers or waiting in a helproom. We also know that comprehending technical
+                information can be very difficult so we made sure our solutions were designed in step-like format and
+                straight to the point. </p>
+        </div>
+        <img src="{{ url_for('static', filename='img/stock_about.png') }}" alt="filler"
+            style="box-shadow: -10px 10px 5px grey;float:left;width:20%;border-radius:10px;">
+    </div>
+
+
+    <div class="row">
+        <div id="title">
+            <h1>FAQ</h1>
+        </div>
+        <img id="defaultImage" src="{{ url_for('static', filename='img/default.png') }}" alt="filler">
+        <div id="faqQ">
+            <div id="questionTail"></div>
+            <div style="margin-top:-55;margin-left:10px;">
+                <h3>Q</h3>
+            </div>
+            <div id="speechtextQ">
+                <p style="padding-left:-30px;"> Who created Mackenzie?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="faqA">
+            <div style="margin-top:-50px;margin-right:10px;">
+                <h4>A</h4>
+            </div>
+            <div id="speechtextA">
+                <p style="padding-left: -50px;">A group of students from both Michigan State University and Wayne State
+                    University.</p>
+            </div>
+
+        </div>
+        <div id="answerTail"></div>
+        <img id="defaultImages" src="{{ url_for('static', filename='img/logo.png') }}" alt="filler" style="border-radius:50%;border:3px solid #729482;"" >
+        </div>
+        <div class=" row">
+        <img id="defaultImage" src="{{ url_for('static', filename='img/default.png') }}" alt="filler">
+        <div id="faqQ">
+            <div id="questionTail"></div>
+            <div style="margin-top:-55;margin-left:10px;">
+                <h3>Q</h3>
+            </div>
+            <div id="speechtextQ">
+                <p style="padding-left:-30px;">Who is Mackenzie?</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="faqA">
+            <div style="margin-top:-50px;margin-right:10px;">
+                <h4>A</h4>
+            </div>
+            <div id="speechtextA">
+                <p style="padding-left:-50px;">I am a chatbot that can be used to solve your technology questions!</p>
+            </div>
+
+        </div>
+        <div id="answerTail"></div>
+        <img id="defaultImage" src="{{ url_for('static', filename='img/logo.png') }}" alt="filler" style="border-radius:50%;border:3px solid #729482;"" >
+            </div>
+
+            <div class=" row">
+        <img id="defaultImage" src="{{ url_for('static', filename='img/default.png') }}" alt="filler">
+        <div id="faqQ">
+            <div id="questionTail"></div>
+            <div style="margin-top:-55;margin-left:10px;">
+                <h3>Q</h3>
+            </div>
+            <div id="speechtextQ">
+                <p style="padding-left:-30px;">So how exactly do you work?</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="faqA">
+            <div style="margin-top:-50px;margin-right:10px;">
+                <h4>A</h4>
+            </div>
+            <div id="speechtextA">
+                <p style="padding-left: -50px;"> I receive infromation based on research from the people who made me!
+                    Every answer I give you has been checked and is correct!</p>
+            </div>
+
+        </div>
+        <div id="answerTail"></div>
+        <img id="defaultImage" src="{{ url_for('static', filename='img/logo.png') }}" alt="filler" style="border-radius:50%;border:3px solid #729482;"" >
+            </div>
+
+            <div class=" row">
+        <img id="defaultImage" src="{{ url_for('static', filename='img/default.png') }}" alt="filler">
+        <div id="faqQ">
+            <div id="questionTail"></div>
+            <div style="margin-top:-55;margin-left:10px;">
+                <h3>Q</h3>
+            </div>
+            <div id="speechtextQ">
+                <p style="padding-left:-30px;">So do you own the information you are using?</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="faqA">
+            <div style="margin-top:-50px;margin-right:10px;">
+                <h4>A</h4>
+            </div>
+            <div id="speechtextA">
+                <p style="padding-left: -50px;">With the power of the internet, we do not! All of the sources are
+                    credited after the answer to your question.</p>
+            </div>
+
+        </div>
+        <div id="answerTail"></div>
+        <img id="defaultImage" src="{{ url_for('static', filename='img/logo.png') }}" alt="filler" style="border-radius:50%;border:3px solid #729482;">
+    </div>
+
+    <div class="row">
+        <img id="defaultImage" src="{{ url_for('static', filename='img/default.png') }}" alt="filler">
+        <div id="faqQ">
+            <div id="questionTail"></div>
+            <div style="margin-top:-55;margin-left:10px;">
+                <h3>Q</h3>
+            </div>
+            <div id="speechtextQ">
+                <p style="padding-left:-30px;">How long did this project take?</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="faqA">
+            <div style="margin-top:-50px;margin-right:10px;">
+                <h4>A</h4>
+            </div>
+            <div id="speechtextA">
+                <p style="padding-left:-50px;"> Just about four months.</p>
+            </div>
+
+        </div>
+        <div id="answerTail"></div>
+        <img id="defaultImage" src="{{ url_for('static', filename='img/logo.png') }}" alt="filler" style="border-radius:50%;border:3px solid #729482;">
+    </div>
+
+    <div class="row">
+        <img id="defaultImage" src="{{ url_for('static', filename='img/default.png') }}" alt="filler">
+        <div id="faqQ">
+            <div id="questionTail"></div>
+            <div style="margin-top:-55;margin-left:10px;">
+                <h3>Q</h3>
+            </div>
+            <div id="speechtextQ">
+                <p style="padding-left:-30px;">How can we contact you?</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="faqA">
+            <div style="margin-top:-50px;margin-right:10px;">
+                <h4>A</h4>
+            </div>
+            <div id="speechtextA">
+                <p style="padding-left:-50px;"> The email is right below!</p>
+            </div>
+
+        </div>
+        <div id="answerTail"></div>
+        <img id="defaultImage" src="{{ url_for('static', filename='img/logo.png') }}" alt="filler" style="border-radius:50%;border:3px solid #729482;">
+    </div>
+
+
+    <footer>
+        <br></br>
+        <br></br>
+        <a href="mailto:mailto:contact.us@mackenzie.help?subject=Hey!%20I%20need%20some%20help." target="_blank"
+            rel="noopener noreferrer">
+            <p>Want to email us?</p>
+        </a>
+    </footer>
+</body>
+
+</html>
