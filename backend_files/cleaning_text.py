@@ -1,4 +1,4 @@
-from creating_json import create_dict
+from backend_files.creating_json import create_dict
 import json
 import nltk
 import string
